@@ -10,13 +10,7 @@
 }
   
 body {
-    backdrop-filter: blur(100%);
-    background-image: url("img/memoriafondo.png");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
-    background-size: 53%;
-    margin-top: 42.8%;
+   background-color: antiquewhite;
   }
 
 
@@ -47,6 +41,7 @@ button {
     height: 83px;
     font-size: 40px;
     margin: 5px 7px; 
+    color: brown;
 }
 
 button:hover {
@@ -54,25 +49,17 @@ button:hover {
 }
 
 .section2 {
-    width: 10px;
-    height: 10px;
+    width: 1px;
+    height: 1px;
 }
  
 #successes, #movements {
     position: absolute;
-    left: 17%;
+    left: 1%;
   }
   
   #successes {
     top: 40%;
-    padding: 9px;
-    border-top-style: ridge;
-    border-bottom-style: double;
-    border-right-style: ridge;
-    border-left-style: ridge;
-    border-color: chocolate;
-    border-left-width: 7px;
-
   }
   
   #movements {
