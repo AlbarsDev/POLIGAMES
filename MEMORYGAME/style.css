@@ -10,7 +10,7 @@
 }
   
 body {
-   background-color: antiquewhite;
+   background-color: transparent;
   }
 
 
@@ -25,7 +25,7 @@ main {
 }
 
 .section1 {
-    background-color: transparent;
+    background-color:lawngreen;
 }
 
 table {
