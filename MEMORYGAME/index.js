@@ -24,7 +24,7 @@ function uncover(id){
         //Show first number//
         card1 = document.getElementById(id);
         firstResult = numbers[id];
-        card1.innerHTML = firstResult;
+        card1.innerHTML = `<img src="./img/${firstResult}.png" alt="">`;
 
         //Disabled first buttom//
         card1.disabled = true;
@@ -33,7 +33,7 @@ function uncover(id){
         //Show second number//
         card2 = document.getElementById(id);
         secondResult = numbers[id];
-        card2.innerHTML = secondResult;
+        card2.innerHTML = `<img src="./img/${secondResult}.png" alt="">`;
 
         //Disabled second button//
         card2.disabled = true;
