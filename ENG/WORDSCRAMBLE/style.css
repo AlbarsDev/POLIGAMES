@@ -6,14 +6,14 @@
     font-family: "Teko", sans-serif;
 }
 body{
-    background-color: #5645aa;
+    background-color: #ffffff;
    
 }
 
 h1{
     font-size: 40px;
     text-align: center;
-    color: #fff;
+    color: #000000;
     font-family: "Teko", sans-serif;
     font-weight: normal;
 }
@@ -21,7 +21,7 @@ h1{
 h2{
     font-size: 35px;
     text-align: center;
-    color:#ec780C;
+    color:#000000;
 }
 
 .contenedor{
@@ -38,7 +38,7 @@ h2{
 
 .contenedor .fila .palabra{
     width: 40%;
-    color:#ff6961;
+    color:#000000;
     font-size: 24px;
     padding: 6px;
     border-radius: 22px;
@@ -56,8 +56,7 @@ h2{
     font-weight: bold;
     border: 2px solid #1305af;
     outline: none;
-    background:#4430a7;
-    color: #ff6961;
+    color: #000000;
 }
 
 .correcta {
@@ -84,7 +83,6 @@ button{
 }
 
 .niveles{
-    background-color: #0e0d12;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -95,7 +93,6 @@ button{
 }
 
 .nivel{
-    background-color: #353444;
     width: 50px;
     height: 50px;
     margin: 10px;

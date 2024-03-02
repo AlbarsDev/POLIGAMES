@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Teko:wght@300..700&display=swap');
+
+*{
+    font-family:"Teko", sans-serif; ;
+}
+
+
+h1 {
+    font-size: 170px;
+    margin: 24px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+img {
+    margin: 20px;
+    height: 230px;
+    width: 230px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    border: none;
+    outline: none;
+}
+
+.languages {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.language-image {
+    transition: transform 0.3s ease; 
+}
+
+.language-image:hover {
+    transform: scale(1.1); 
+}

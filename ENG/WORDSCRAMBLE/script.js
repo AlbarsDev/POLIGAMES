@@ -14,22 +14,6 @@ bd[8] = ['BORRA', 'REGLA', 'TINTA', 'TIJERAS', 'LÁPIZ', 'PEGA', 'BOLÍGRAFO'];
 let categorias = ['FRUTAS', 'VEGETALES', 'CARAMELOS','FLORES', 'ÁRBOLES','ANIMALES', 'HOGAR', 'MÚSICA', 'ESCUELA']
 
 
-let palabrasIngles = [
-    ['PEAR', 'GUAVA', 'ORANGE', 'MELON', 'PINEAPPLE', 'CHERRY', 'APRICOT'],
-    ['BELL PEPPER', 'ONION', 'BROCCOLI', 'DILL', 'CARROT', 'CUCUMBER', 'FENNEL'],
-    ['NOUGAT', 'LOLLIPOP', 'CHOCOLATE', 'JELLY', 'ICE CREAM', 'COOKIE', 'MINT', 'LICORICE'],
-    ['ROSE', 'LILY', 'SUNFLOWER', 'POPPY', 'DAFFODIL', 'GERANIUM', 'LAVENDER'],
-    ['OLIVE', 'FERN', 'PALM', 'BAMBOO', 'OAK', 'PINE', 'ALMOND'],
-    ['LION', 'HEN', 'DOG', 'LEOPARD', 'BAT', 'MONKEY', 'ELEPHANT'],
-    ['OVEN', 'REFRIGERATOR', 'PAN', 'BLENDER', 'KNIFE', 'POT', 'TOASTER'],
-    ['FLUTE', 'HARMONICA', 'PIANO', 'HARP', 'DRUMS', 'CASTANETS', 'BONGOS'],
-    ['ERASER', 'RULER', 'INK', 'SCISSORS', 'PENCIL', 'GLUE', 'PEN'],
-]
-
-let palabrasItaliano = [
-
-];
-
 
 const cantidadPalabras = 5;
 let palabras = [];
@@ -68,15 +52,9 @@ function desordenarPalabras(){
     }
 }
 
-function agregarPalabra() {
+function agregarPalabra(){
     let h2 = document.createElement("h2");
-    if (idiomaElegido === "Inglés") {
-        h2.textContent = "FRUITS"; 
-    } else if (idiomaElegido === "Italiano") {
-        h2.textContent = "FRUTTA"; 
-    } else {
-        h2.textContent = categorias[pos]; 
-    }
+    h2.textContent = categorias[pos];
     document.querySelector("#contenedor").appendChild(h2);
     for(var i = 0; i < desordenadas.length;i++){
         let div = document.createElement("div");
