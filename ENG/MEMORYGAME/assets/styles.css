@@ -129,6 +129,12 @@ button.lock{
     cursor: pointer;
 }
 
+img {
+    margin: 13px;
+    width: 70px;
+    height: 70px;
+}
+
 .card-front,
 .card-back {
     position: absolute;

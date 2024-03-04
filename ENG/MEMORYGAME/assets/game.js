@@ -54,15 +54,16 @@ const generateGame = () => {
         throw new Error("The dimension of the board must be an even number.")
     }
 
-    const emojis = ['🥔', '🍒', '🥑', '🌽', '🥕', '🍇', '🍉', '🍌', '🥭', '🍍']
-    const picks = pickRandom(emojis, (dimensions * dimensions) / 2) 
+
+    const images = ['./img/ant.png', './img/bat.png', './img/beetle.png', './img/beluga.png', './img/butterfly.png', './img/camel.png', './img/chameleon.png', './img/cheetah.png', './img/crab.png', './img/crocodile.png']
+    const picks = pickRandom(images, (dimensions * dimensions) / 2) 
     const items = shuffle([...picks, ...picks])
     const cards = `
         <div class="board" style="grid-template-columns: repeat(${dimensions}, auto)">
             ${items.map(item => `
                 <div class="card">
                     <div class="card-front"></div>
-                    <div class="card-back">${item}</div>
+                    <div class="card-back"><img src="${item}" alt="memory card"/></div>
                 </div>
             `).join('')}
        </div>
@@ -72,6 +73,7 @@ const generateGame = () => {
 
     selectors.board.replaceWith(parser.querySelector('.board'))
 }
+
 
 const startGame = () => {
     state.gameStarted = true
