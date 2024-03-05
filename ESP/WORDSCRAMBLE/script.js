@@ -7,7 +7,7 @@ bd[3] = ['ROSA', 'LIRIO', 'GIRASOL', 'AMAPOLA', 'NARCISO', 'GERANIO', 'LAVANDA']
 bd[4] = ['OLIVO', 'HELECHO', 'PALMERA', 'BAMBÚ', 'ROBLE', 'PINO', 'ALMENDRO'];
 bd[5] = ['LEÓN', 'GALLINA', 'PERRO', 'LEOPARDO', 'MURCIÉLAGO', 'MONO', 'ELEFANTE'];
 bd[6] = ['HORNO', 'NEVERA', 'SARTÉN', 'BATIDORA', 'CUCHILLO', 'OLLA', 'TOSTADORA'];
-bd[7] = ['FLAUTA', 'ARMóNICA', 'PIANO', 'ARPA', 'TAMBORES', 'CASTAÑUELAS', 'BONGOS'];
+bd[7] = ['FLAUTA', 'ARMÓNICA', 'PIANO', 'ARPA', 'TAMBORES', 'CASTAÑUELAS', 'BONGOS'];
 bd[8] = ['BORRA', 'REGLA', 'TINTA', 'TIJERAS', 'LÁPIZ', 'PEGA', 'BOLÍGRAFO'];
 
 
@@ -121,7 +121,7 @@ function siguiente(){
         agregarPalabra();
     }else{
         let h2 = document.createElement("h2");
-        h2.textContent = "JUEGO FINALIZADO!! MUY BIEN!!";
+        h2.textContent = "JUEGO ¡FINALIZADO!       !MUY BIEN!";
         document.querySelector("#contenedor").appendChild(h2);
     }
 

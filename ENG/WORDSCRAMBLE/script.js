@@ -12,7 +12,7 @@ bd[8] = ['ERASER', 'RULER', 'INK', 'SCISSORS', 'PENCIL', 'GLUE', 'PEN'];
 
 
 
-let categorias = bd[0] = ['FRUITS', 'VEGETABLES', 'CANDIES', 'FLOWERS', 'TREES', 'ANIMALS', 'HOME', 'MUSIC', 'SCHOOL'];
+let categorias = ['FRUITS', 'VEGETABLES', 'CANDIES', 'FLOWERS', 'TREES', 'ANIMALS', 'HOME', 'MUSIC', 'SCHOOL'];
 
 
 
