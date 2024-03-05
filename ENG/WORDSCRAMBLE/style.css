@@ -6,34 +6,48 @@
     font-family: "Teko", sans-serif;
 }
 
-body{
-    background-color: #ffffff;
+body {
+    background-color: #fff;
+    background-image: linear-gradient(-45deg, #1e5677, #0a77b7, #3fbaff, #5fc5ff, #7fd1ff, #9fdcff);
+    background-size: 600% 600%;
+    animation: bgAnimationGradient 25s infinite linear;
 }
 
-h1{
-    font-size: 40px;
-    text-align: center;
-    color: #000000;
-    font-family: "Teko", sans-serif;
-    font-weight: normal;
+@keyframes bgAnimationGradient {
+    0% {
+        background-position: 0% 85%;
+    }
+    50% {background-position: 100% 20%;
+    }
+    100% {
+        background-position: 0% 85%;
+    }
 }
+
 
 h2{
-    font-size: 35px;
+    font-size: 37px;
     text-align: center;
     color:#000000;
 }
 
 .contenedor{
-    max-width: 400px;
+    width: 30%;
     margin: auto;
+    margin-top: 37px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.80);
 }
 
 .contenedor .fila{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 9px 0;
+    margin: 7px 0;
 }
 
 .contenedor .fila .palabra{
@@ -43,29 +57,30 @@ h2{
     padding: 6px;
     border-radius: 22px;
     font-weight: bold;
-    border: 2px solid #46ac31;
+    border: 2.4px solid #000000;
 }
 
 .contenedor input{
     width: 40%;
     text-align: center;
     font-family: "Teko", sans-serif;
-    color:#000;
+    color:#000000;
     font-size: 24px;
     border-radius: 22px;
     font-weight: bold;
-    border: 2px solid #1305af;
+    border: 2.4px solid #000000;
     outline: none;
-    color: #000000;
+    
 }
 
 .correcta {
     color: #46ac31 !Important;
+    background-color: #000;
 }
 
 button{
     border: none;
-    background-color:#3b31ac;
+    background-color:#000000;
     color: #fff;
     display: block;
     margin: 10px auto;
@@ -82,19 +97,25 @@ button{
     100%{transform: scale(1);}
 }
 
-.niveles{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.niveles {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%; 
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 7px 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.80);
 }
+
 
 .nivel{
     width: 50px;
-    height: 50px;
+    height: 45px;
     margin: 10px;
     position: relative;
     border-radius: 20px;
@@ -106,7 +127,7 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
-    color: #000;
+    color: #000000;
 }
 
 .completado{
@@ -114,5 +135,5 @@ button{
 }
 
 .completado i{
-    color:#fff !important; 
+    color:#0000006f !important; 
 }

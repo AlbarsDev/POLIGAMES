@@ -1,3 +1,5 @@
+
+
 function ValidateLoginForm() {
 	RemoveAllErrorMessage();
 
@@ -19,7 +21,11 @@ function ValidateLoginForm() {
 	}
 	
 	return true;
+	
 }
+
+
+
 
 function ValidateRegistrationForm(){
 
