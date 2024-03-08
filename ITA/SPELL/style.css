@@ -1,0 +1,27 @@
+
+
+body {
+    background: linear-gradient(-45deg, #1ab734, #2cd648, #3cde57, #5cf776);
+    background-size: 900% 200%;
+    height: 90vh;
+    animation: animate 13s linear infinite alternate;
+  }
+  
+  @keyframes animate {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    0%{
+      background-position: 0% 50%;
+    }
+  }
+
+  .not{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-10px);
+  }

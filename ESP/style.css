@@ -35,15 +35,39 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding: 10px 40px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-    background-color: #ffffff;
     text-align: center;
     color: #000000;
     font-size: 18px;
     flex-basis: calc(50% - 10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.9);
+   
+  }
+
+  .card:hover {
+    background: linear-gradient(-45deg, rgb(238, 115, 74), rgb(240, 240, 64), rgb(71, 237, 71), rgb(88, 88, 240), rgb(174, 81, 240), rgb(244, 123, 244));
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    animation: gradient 14s ease infinite; 
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      transform: scale(1.05); 
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
+
 
 h2, h3, h4, h5 {
     font-size: 24px;
@@ -76,14 +100,38 @@ p {
     align-items: center;
     width: 470%;
     height: 130px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     background-color: #ffffff;
     text-align: center;
     color: #000000;
     line-height: 3.9;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.9);
 }
+
+.button:hover {
+    background: linear-gradient(-45deg, rgb(238, 115, 74), rgb(240, 240, 64), rgb(71, 237, 71), rgb(88, 88, 240), rgb(174, 81, 240), rgb(244, 123, 244));
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    animation: gradient 14s ease infinite; 
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      transform: scale(1.05); 
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .letra{
     width: 70px;
