@@ -91,6 +91,7 @@ p {
     padding: 20px; 
     font-size: 20px;
     text-align: justify;
+    word-spacing: -2px;
 }
 
 .button {

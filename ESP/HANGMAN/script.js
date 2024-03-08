@@ -138,7 +138,7 @@ const initializer = () => {
             winCount += 1;
             
             if (winCount == charArray.length) {
-              resultText.innerHTML = `<h2 class='win-msg'>You Win!!</h2>`;
+              resultText.innerHTML = `<h2 class='win-msg'>¡Ganaste!</h2>`;
              
               blocker();
             }
