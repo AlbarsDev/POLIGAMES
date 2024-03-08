@@ -7,22 +7,24 @@
 }
 
 body {
-    background-color: #fff;
-    background-image: linear-gradient(-45deg, #1e5677, #0a77b7, #3fbaff, #5fc5ff, #7fd1ff, #9fdcff);
-    background-size: 600% 600%;
-    animation: bgAnimationGradient 25s infinite linear;
-}
-
-@keyframes bgAnimationGradient {
-    0% {
-        background-position: 0% 85%;
+    background: linear-gradient(-45deg, #5547ee, #4032d3, #6355ff, #8b7fff);
+    background-size: 900% 200%;
+    height: 90vh;
+    animation: animate 10s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%{
+      background-position: 0% 50%;
     }
-    50% {background-position: 100% 20%;
+    50%{
+      background-position: 100% 50%;
     }
-    100% {
-        background-position: 0% 85%;
+    0%{
+      background-position: 0% 50%;
     }
-}
+  }
+  
 
 
 h2{

@@ -4,18 +4,6 @@
     font-family:"Teko", sans-serif; 
 }
 
-@keyframes color {
-    0% {
-        background-position: 0 60%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
 
 .login {
     width: 90px;
@@ -25,7 +13,7 @@
     top: 0;
 }
 
-h1 {
+h1{
     font-size: 170px;
     margin: 24px;
     display: flex;
@@ -35,7 +23,7 @@ h1 {
     -webkit-background-clip: text;
     color: transparent;
     background-size: 400% 400%;
-    animation: gradient 25s ease infinite;
+    animation: gradient 25s ease infinite; 
 }
 
 @keyframes gradient {
@@ -61,9 +49,12 @@ a {
     color: inherit;
 }
 
+
+
 a:hover {
     border: none;
     outline: none;
+
 }
 
 .languages {
@@ -73,9 +64,9 @@ a:hover {
 }
 
 .language-image {
-    transition: transform 0.3s ease; 
+    transition: transform 0.4s ease; 
 }
 
 .language-image:hover {
-    transform: scale(1.1); 
+    transform: scale(1.2); 
 }

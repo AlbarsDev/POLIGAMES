@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Teko:wght@300..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"Teko", sans-serif;
+} 
+
+body {
+  background: linear-gradient(-45deg, #ff3fba, #ff5fc5, #ff7fd1, #ff9fdc);
+  background-size: 900% 200%;
+  height: 90vh;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  0%{
+    background-position: 0% 50%;
+  }
+}
+
+img {
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.container {
+  font-size: 20px;
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.50);
+
+}
+
+#options-container {
+  text-align: center;
+}
+
+#options-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+
+#options-container button {
+  font-size: 20px;
+  padding: 0.6em 1.2em;
+  background-color: #000000ee;
+  color:#e00f66;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#options-container button:active {
+  background-color: #e00f66;
+  color: #000000;
+}
+
+
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+#letter-container button {
+  height: 2.7em;
+  width: 2.7em;
+  border-radius: 0.3em;
+  background-color: #ffffff;
+  color:#000000;
+  cursor: pointer;
+}
+
+.new-game-popup {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+
+#user-input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+canvas {
+  display: block;
+  margin: auto;
+  border: 1px solid #000000;
+}
+.hide {
+  display: none;
+}
+#result-text h2 {
+  font-size: 40px;
+  text-align: center;
+}
+#result-text p {
+  font-size: 40px;
+
+}
+#result-text span {
+  font-weight: 600;
+}
+
+#new-game-button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(83, 78, 78, 0.647);
+  color: #000000;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+
+
+.win-msg {
+  color: #39d78d;
+}
+.lose-msg {
+  color: #fe5152;
+}
