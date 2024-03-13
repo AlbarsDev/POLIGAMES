@@ -1,6 +1,6 @@
 
 
-function ValidateLoginForm() {
+/*function ValidateLoginForm() {
 	RemoveAllErrorMessage();
 
 	var LoginEmail = document.getElementById('LoginEmail').value;
@@ -23,6 +23,8 @@ function ValidateLoginForm() {
 	return true;
 	
 }
+
+*/
 
 
 

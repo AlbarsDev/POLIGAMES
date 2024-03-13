@@ -123,7 +123,7 @@ function siguiente(){
         agregarPalabra();
     }else{
         let h2 = document.createElement("h2");
-        h2.textContent = "JUEGO FINALIZADO!! MUY BIEN!!";
+        h2.textContent = "FINISHED GAME!       VERY GOOD!";
         document.querySelector("#contenedor").appendChild(h2);
     }
 

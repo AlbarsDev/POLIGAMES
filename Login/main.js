@@ -1,4 +1,4 @@
-function ShowLoginForm(){
+/*function ShowLoginForm(){
 	
 	SetTitle("Login");
 
@@ -74,4 +74,4 @@ function ShowHideFromSwitchBtn(ShowOrHide) {
 	}
 }
 
-// end
+*/
