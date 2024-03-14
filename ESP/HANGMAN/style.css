@@ -39,13 +39,17 @@ img {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  padding: 3em;
+  padding: 2em;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   border:1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.50);
 
+}
+
+h3 {
+  font-size: 40px;
 }
 
 #options-container {
@@ -60,8 +64,8 @@ img {
 }
 
 #options-container button {
-  font-size: 20px;
-  padding: 0.6em 1.2em;
+  font-size: 30px;
+  padding: 0.2em 15px;
   background-color: #000000ee;
   color:#e00f66;
   backdrop-filter: blur(10px);

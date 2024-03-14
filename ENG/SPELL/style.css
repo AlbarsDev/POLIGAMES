@@ -79,7 +79,7 @@ body {
   }
 
   #display-container {
-    padding: 3em 3em;
+    padding: 1em 3em;
     width: 90%;
     max-width: 37em;
     position: absolute;
@@ -95,8 +95,9 @@ body {
   
 .app-title {
   text-align: center;
+  padding-bottom: 10px;
+  font-size: 45px;
   font-weight: 500;
-  padding-bottom: 0.5em;
   border-bottom: 1px solid #000000;
 }
 
@@ -114,8 +115,60 @@ body {
   padding: 0.5em 2em;
   color: azure;
   border-radius: 20px;
+  font-size: 20px;
+}
+
+.question {
+  text-align: center;
+  font-size: 60px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 0.6fr 0.6fr;
+  gap: 2em;
+}
+
+.option-div {
+  width: 100%;
+  padding: 7px;
+  margin: 0.3em 0;
+  font-size: 30px;
+  text-align: center;
+  outline: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.80);
+  cursor: pointer;
+  color: #000000;
+}
+ 
+.option-div:disabled {
+  cursor: not-allowed;
+  color: #020130;
 }
 
 .hide {
   display: none;
+}
+
+.correct {
+  border: none;
+  background-color: #2fe004;
+  color: #ffffff;
+}
+
+.inCorrect {
+  border: none;
+  background-color: #ee4d38;
+  color: #ffffff;
+}
+
+#user-result {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
 }

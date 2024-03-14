@@ -13,32 +13,32 @@ let countdown;
 
 let quizArray = [];
 let correctWords = [
-    "Bone",
-    "Calendar",
-    "Foot",
-    "Eyeball",
-    "Socks",
-    "Skeleton",
-    "Skirt",
-    "Glasses",
-    "Aunt",
-    "Cousin",
-    "Father",
-    "Teenager"
+        "Hueso",
+        "Calendario",
+        "Pie",
+        "Globo ocular",
+        "Calcetines",
+        "Esqueleto",
+        "Falda",
+        "Gafas",
+        "Tía",
+        "Primo/a",
+        "Padre",
+        "Adolescente"
 ];
 let incorrectWords = [
-    "Bowne",
-    "Calender",
-    "Fot",
-    "Eyebal",
-    "Soks",
-    "Skelleton",
-    "Skert",
-    "Glasess",
-    "Antt",
-    "Cousen",
-    "Faher",
-    "Teeneger"
+        "Huezo",
+        "Calendário",
+        "Píe",
+        "Glovo ocular",
+        "Calsetines",
+        "Esqueleto",
+        "Fálida",
+        "Gáfaz",
+        "Tíaa",
+        "Prímo/a",
+        "Padré",
+        "Adolescénte"    
 ];
 
 const generateRandomValue = (array) => 
@@ -51,7 +51,7 @@ displayNext = () => {
 
 const timerDisplay = () => {
     countdown = setInterval(() => {
-        timer.innerHTML = "Time: " + count + "s";
+        timer.innerHTML = "Tiempo: " + count + "s";
         count++;
     }, 1000);
 };
@@ -82,7 +82,7 @@ const questionGenerator = () => {
 
         div.innerHTML += `<div class="button-container">
         <button class="option-div" onclick="checker(true, this)">
-        Yes</button>
+        Si</button>
         <button class="option-div" onclick="checker(false, this)">
         No</button>
         </div>`;
@@ -97,7 +97,7 @@ const questionGenerator = () => {
         if (correctWords.includes(question)) {
             currentElement.classList.add("correct");
             scoreCount++;
-            streak.innerText = `Streak: ${scoreCount}`;
+            streak.innerText = `Racha: ${scoreCount}`;
             setTimeout(displayNext, 2000);
         } else {
             currentElement.classList.add("inCorrect");
@@ -108,7 +108,7 @@ const questionGenerator = () => {
             if (incorrectWords.includes(question)) {
                 currentElement.classList.add("correct");
                 scoreCount++;
-                streak.innerText = `Streak: ${scoreCount}`;
+                streak.innerText = `Racha: ${scoreCount}`;
                 setTimeout(displayNext, 2000);
             } else {
                 currentElement.classList.add("inCorrect");
@@ -127,9 +127,9 @@ const displayResults = () => {
     quizArray.pop();
     displayContainer.classList.add("hide");
     startScreen.classList.remove("hide");
-    startButton.innerText = "New Game";
+    startButton.innerText = "Nuevo Juego";
 
-    userResult.innerHTML = `<p>Your streak: ${scoreCount}</p><p>Time Taken: ${count}s</p>`;
+    userResult.innerHTML = `<p>Tu Racha: ${scoreCount}</p><p>Tiempo Tomado: ${count}s</p>`;
 
     count = 0;
     clearInterval(count);
@@ -139,7 +139,7 @@ const displayResults = () => {
     quizContainer.innerHTML = "";
     questionCount = 0;
     scoreCount = 0;
-    streak.innerText = "Streak: 0";
+    streak.innerText = "Racha: 0";
     clearInterval(countdown);
     count = 0;
     timerDisplay();
@@ -154,7 +154,7 @@ startButton.addEventListener("click", () => {
 });
 
 window.onload = () => {
-    startButton.innerText = "Start";
+    startButton.innerText = "Inicio";
     userResult.innerText = "";
 }
 
