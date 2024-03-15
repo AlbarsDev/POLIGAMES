@@ -73,6 +73,7 @@ h2, h3, h4, h5 {
     font-size: 24px;
     margin-bottom: 6px;
     display: flex;
+    padding: 10px;
     justify-content:center;
     align-items: center;
 }
@@ -89,17 +90,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; 
     font-size: 20px;
     text-align: justify;
-    word-spacing: -2px;
 }
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 470%;
+    width: 464%;
     height: 130px;
     background-color: #ffffff;
     text-align: center;

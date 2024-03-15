@@ -1,4 +1,3 @@
-
 let timer = document.getElementsByClassName("timer-div")[0];
 let streak = document.querySelector(".streak-div");
 let quizContainer = document.getElementById("container");
@@ -24,8 +23,8 @@ let correctWords = [
     "Aunt",
     "Cousin",
     "Father",
-    "Teenager"
 ];
+
 let incorrectWords = [
     "Bowne",
     "Calender",
@@ -129,7 +128,7 @@ const displayResults = () => {
     startScreen.classList.remove("hide");
     startButton.innerText = "New Game";
 
-    userResult.innerHTML = `<p>Your streak: ${scoreCount}</p><p>Time Taken: ${count}s</p>`;
+    userResult.innerHTML = `<p>Your Streak: ${scoreCount}</p><p>Time Taken: ${count}s</p>`;
 
     count = 0;
     clearInterval(count);
@@ -157,6 +156,3 @@ window.onload = () => {
     startButton.innerText = "Start";
     userResult.innerText = "";
 }
-
-
-  
